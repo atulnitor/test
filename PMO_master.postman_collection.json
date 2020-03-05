@@ -1,0 +1,709 @@
+{
+	"info": {
+		"_postman_id": "82c34bbb-a675-48e7-98d3-2b721a4115d4",
+		"name": "PMO_master",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/api/designations/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"designation\": {\n\t\t\"name\":\"ABVCDD\",\n\t\t\"short_name\": \"yyuyu\",\n\t\t\"description\": \"sdsdss\",\n\t\t\"is_active\": true\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/designations/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"designations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/designations/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"designation\": {\n\t\t\"name\":\"ABVCDD\",\n\t\t\"short_name\": \"yyuyu\",\n\t\t\"description\": \"sdsdss\",\n\t\t\"is_active\": true\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/designations/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"designations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/designations/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"designation\": {\n\t\t\"name\":\"ABVCDD\",\n\t\t\"short_name\": \"OOOOOOOO\",\n\t\t\"description\": \"sdsdss\",\n\t\t\"is_active\": true\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/designations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"designations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/designations/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"designation\": {\n\t\t\"name\":\"ABVCDD\",\n\t\t\"short_name\": \"OOOOOOOO\",\n\t\t\"description\": \"sdsdss\",\n\t\t\"is_active\": true\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/designations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"designations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"organization\":\n\t{\n\t\t\"name\": \"hhjkhjk\",\n\t\t\"short_name\": \"AMD\",\n\t\t\"is_active\": true\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/organization/4",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"organization",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/organization",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"organization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/sections",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"section\":\r\n\t{\r\n\t\t\"section_title\": \"DP\",\r\n\t\t\"section_description\": \"DP section details\",\r\n\t\t\"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/sections/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sections",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"section\":\r\n\t{\r\n\t\t\"section_title\": \"GRP\",\r\n\t\t\"section_description\": \"DP section details\",\r\n\t\t\"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/sections/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sections",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"section\":\r\n\t{\r\n\t\t\"section_title\": \"GRP\",\r\n\t\t\"section_description\": \"DP section details\",\r\n\t\t\"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/sections/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sections",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"section\":\r\n\t{\r\n\t\t\"section_title\": \"GRP\",\r\n\t\t\"section_description\": \"DP section details\",\r\n\t\t\"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/operations/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"operations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"operation\":\r\n\t{\r\n\t\t\"section_id\": \"1\",\r\n\t\t\"operation_title\": \"G\",\r\n\t\t\"operation_description\": \"G operations details\",\r\n        \"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/operations/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"operations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"operation\":\r\n\t{\r\n\t\t\"section_id\": \"1\",\r\n\t\t\"operation_title\": \"uhkjhkj\",\r\n\t\t\"operation_description\": \"G operations details\",\r\n        \"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/operations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"operations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"operation\":\r\n\t{\r\n\t\t\"section_id\": \"1\",\r\n\t\t\"operation_title\": \"uhkjhkj\",\r\n\t\t\"operation_description\": \"G operations details\",\r\n        \"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/operations",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"operations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"operation\":\r\n\t{\r\n\t\t\"section_id\": \"1\",\r\n\t\t\"operation_title\": \"uhkjhkj\",\r\n\t\t\"operation_description\": \"G operations details\",\r\n        \"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/operations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"operations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"operation\":\r\n\t{\r\n\t\t\"section_id\": \"1\",\r\n\t\t\"operation_title\": \"uhkjhkj\",\r\n\t\t\"operation_description\": \"G operations details\",\r\n        \"is_active\": true\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orgunit/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orgunit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orgunit\":\n\t{\n\t\t\"name\": \"Unit1\",\n\t\t\"short_name\": \"U1\",\n\t\t\"address\": \"Pune\",\n\t\t\"is_active\":true\n\t}\n\t\t\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orgunit/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orgunit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orgunit\":\n\t{\n\t\t\"name\": \"Unit1\",\n\t\t\"short_name\": \"U1\",\n\t\t\"address\": \"ll\",\n\t\t\"is_active\":true\n\t}\n\t\t\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orgunit/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orgunit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orgunit\":\n\t{\n\t\t\"name\": \"Unit1\",\n\t\t\"short_name\": \"U1\",\n\t\t\"address\": \"ll\",\n\t\t\"is_active\":true\n\t}\n\t\t\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orgunit",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orgunit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/organization/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orgunit\":\n\t{\n\t\t\"name\": \"Unit1\",\n\t\t\"short_name\": \"U1\",\n\t\t\"address\": \"ll\",\n\t\t\"is_active\":true\n\t}\n\t\t\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/orgunit/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orgunit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,15 @@
+
+The @nestjs/platform-express package is used by default.
+
+npm i -g @nestjs/cli
+
+nest new project-name
+
+//controller
+$ nest g controller cats
+
+//service create
+$ nest g service cats
+
+
+Nest is probably the only available well-structured framework that is written entirely with Typescript.

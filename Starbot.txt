@@ -1,0 +1,61 @@
+
+qRisottoHost: 'https://ip-172-31-53-75.ec2.internal:4000/v1/user/',  
+
+Use local
+
+key: fs.readFileSync('D:/starBot/StarBotServer/cert/bluestarindia.com.key'), 
+   cert: fs.readFileSync('D:/starBot/StarBotServer/cert/star_bluestarindia_com.crt'),
+   ca: fs.readFileSync('D:/starBot/StarBotServer/cert/DigiCertCA.crt')
+   
+   
+   
+ key: fs.readFileSync('client_key.pem'),
+        cert: fs.readFileSync('client.pem'),
+        ca: fs.readFileSync('root.pem'),
+
+  key: fs.readFileSync('D:/StarBotServer-master/cert/bluestarindia.com.key'), 
+        cert: fs.readFileSync('D:/StarBotServer-master/cert/star_bluestarindia_com.crt'),
+        ca: fs.readFileSync('D:/StarBotServer-master/cert/DigiCertCA.crt'),
+		
+		
+for accessing live server dealer list using riso
+
+		
+		index.ts
+		
+		
+const options = {
+  //please check correct path
+  key: fs.readFileSync('../cert/bluestarindia.com.key'), 
+	cert: fs.readFileSync('../cert/star_bluestarindia_com.crt'),
+	ca: fs.readFileSync('../cert/DigiCertCA.crt')
+};
+
+
+db.mycol.find({},{"title":1,_id:0})
+Please note _id field is always displayed while executing find() method, if you don't want this field, then you need to set it as 0.
+
+
+
+ssh -i "/d/pemfile/portfolio.pem" ec2-user@3.82.31.66
+
+netstat -tupan |grep 3000
+
+ netstat
+ 
+ vi package.json 
+ 
+ 279 
+ 
+ addMyDealer
+ 
+ https://medium.com/cs-note/setup-node-and-express-on-aws-ec2-windows-7-8cb499ab14eb
+ 
+ 
+Live server 
+ssh -i /d/pemfile/portfolio.pem ec2-user@3.82.31.66
+
+
+Heroko login
+099Optimus@123
+

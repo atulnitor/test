@@ -1,0 +1,17 @@
+PMO have 3 portals. (pmocore, pmoui, pmoapigateway)
+
+You need to clone all this directory. After that you need install all project dependency using npm install command.
+
+ex:   D:\pmocore> npm install
+				  npm start	
+
+	  D:\pmo-ui> npm install
+				 npm start
+	  
+	  D:\pmo-apigateway> npm install
+						 npm start
+	  
+	  Database setting: 
+	  We are using postgresql(v11.5.2). In app.module.ts file, we set two flag for schema creation.
+	  When you start server using cli command you need to set flag true (synchronize: true, dropSchema: true) for tables creation.
+	  After installation, you need to set a flag false.

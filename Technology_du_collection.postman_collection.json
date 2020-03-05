@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "1cd295d3-a5f4-45d5-9125-00f4a0a3d8a7",
+		"name": "Technology_du_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8050/api/du/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"ABCSDER\",\n\t\"description\":\"dsasdadasdadasd\",\n\t\"is_active\": false,\n\t\"from_date\":\"2007-12-13\",\n\t\"end_date\": \"2007-12-1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.11.14.140:5000/api/delivery_units/",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delivery_units",
+						""
+					]
+				},
+				"description": "Get du master by id"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/delivery_units/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"ABCSDER\",\n\t\"description\":\"dsasdadasdadasd\",\n\t\"is_active\": false,\n\t\"from_date\":\"2007-12-13\",\n\t\"end_date\": \"2007-12-1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.11.14.140:5000/api/delivery_units/",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delivery_units",
+						""
+					]
+				},
+				"description": "Get all du master"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/delivery_units/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.11.14.140:5000/api/delivery_units/1",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delivery_units",
+						"1"
+					]
+				},
+				"description": "Get du by id"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/delivery_units/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n\t\"delivery_unit\":\n\t{\n\t\t\"name\": \"unit 2\",\n\t\t\"from_date\": \"2014-05-01T18:47:05.069722+00:00\",\n\t\t\"end_date\": \"2014-05-01T18:47:05.069722+00:00\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.11.14.140:5000/api/delivery_units/1",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delivery_units",
+						"1"
+					]
+				},
+				"description": "Update du by id"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/countries/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.11.14.140:5000/api/countries/",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"countries",
+						""
+					]
+				},
+				"description": "Get all coutries"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/countries/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country\":\n\t{\n\t\t\"name\": \"USA\"\n\t}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.11.14.140:5000/api/countries/",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"countries",
+						""
+					]
+				},
+				"description": "Add country"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/delivery_units/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "10.11.14.140:5000/api/technologies/",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"technologies",
+						""
+					]
+				},
+				"description": "get technology"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/technologies/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"technology\":\n\t{\n\t\t\"name\": \"Vue js\" ,\n\t\t\"short_name\": \"Vue\",\n\t\t\"description\": \"vue is server side technology\",\n\t\t\"version\": \"48.11\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.11.14.140:5000/api/technologies/",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"technologies",
+						""
+					]
+				},
+				"description": "Technology created"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/technologies/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"technology\":\n\t{\n\t\t\"name\": \"Node js\" ,\n\t\t\"short_name\": \"node\",\n\t\t\"description\": \"Node js is server side technology\",\n\t\t\"version\": \"4.14\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.11.14.140:5000/api/technologies/1",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"technologies",
+						"1"
+					]
+				},
+				"description": "update by id"
+			},
+			"response": []
+		},
+		{
+			"name": "10.11.14.140:5000/api/technologies/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "10.11.14.140:5000/api/technologies/1",
+					"host": [
+						"10",
+						"11",
+						"14",
+						"140"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"technologies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

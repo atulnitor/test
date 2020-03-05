@@ -1,0 +1,69 @@
+class ButtonComponent extends React.Component {
+
+    constructor(props){
+              super(props);
+              this.state = {
+                     data: '',
+                     isLoading: false,
+               };
+               this.click = this.click.bind(this);
+        }
+
+    click() {
+
+        this.setState({ isLoading: true });
+
+        axios.post("<MY_URL>:3900/find/rapinfo", {})
+            .then((response) => {
+                  this.setState({ data: response.data, isLoading: false });
+             })
+            .catch((err) => {
+                  this.setState({ data: err, isLoading: false });
+             });
+    }
+
+    render() {
+       return  (
+            <div>
+                <button onClick={this.click} disabled={this.state.isLoading}> click me </button>
+                {this.state.data}
+            </div>
+           );
+        }
+    }
+	
+	
+	
+	
+	class App extends React.Component {
+
+   constructor(props){
+             super(props);
+             this.state = {
+                    data: '',
+                    isLoading: false,
+              };
+              this.click = this.click.bind(this);
+       }
+
+   click() {
+
+      console.log("In the click function...")
+
+       axios.get("localhost:3000/api/login", {})
+           .then((response) => {
+                 console.log(response);
+            })
+           .catch((err) => {
+                console.log(err);
+            });
+   }
+
+   render() {
+      return  (
+           <div><br></br>
+               <button onClick={this.click} > Login with Nitor </button>
+          </div>
+          );
+       }
+   }
